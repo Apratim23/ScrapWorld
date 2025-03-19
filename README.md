@@ -5,7 +5,7 @@
 This project implements a minimalistic web scraper application integrated with Large Language Models (LLMs) for intelligent content processing 🤖. The application allows users to input URLs or topics, scrape relevant content, and process it using LLMs to generate summaries, extract key points, or analyze sentiment 📊.
 
 ## 📸 Preview
-
+![Banner](./preview/Scrapworld.png)
 ![Website](./preview/WhatsApp%20Image%202025-03-19%20at%2018.41.59_ecc543b2.jpg)
 
 
