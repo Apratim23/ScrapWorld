@@ -6,7 +6,9 @@ This project implements a minimalistic web scraper application integrated with L
 
 ## 📸 Preview
 ![Banner](./preview/Scrapworld.png)
-![Website](./preview/WhatsApp%20Image%202025-03-19%20at%2018.41.59_ecc543b2.jpg)
+![Website1](./preview/WhatsApp%20Image%202025-03-19%20at%2018.41.59_ecc543b2.jpg)
+![Website2](./preview/WhatsApp%20Image%202025-03-19%20at%2018.42.18_0529b6bd.jpg)
+
 
 
 ## 🎯 Features
