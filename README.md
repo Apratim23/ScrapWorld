@@ -130,6 +130,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 
 👨‍💻 Developer
+
 Developed by [@Apratim23](https://github.com/Apratim23) 🌟
 
 [LinkedIn](https://www.linkedin.com/in/apratim-dutta-78b5ba216/)
