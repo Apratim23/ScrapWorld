@@ -129,7 +129,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **LlamaIndex**: For advanced document processing 📊
 
 
-👨‍💻 Developer
+## 👨‍💻 Developer
 
 Developed by [@Apratim23](https://github.com/Apratim23) 🌟
 
