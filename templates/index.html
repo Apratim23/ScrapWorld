@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper with LLM</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Web Scraper with LLM</h1>
+            <p>Scrape web content and process it with large language models</p>
+        </header>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="url-tab">Scrape by URL</button>
+            <button class="tab-btn" data-tab="topic-tab">Scrape by Topic</button>
+        </div>
+        
+        <div class="tab-content active" id="url-tab">
+            <div class="input-group">
+                <label for="url-input">URL to Scrape:</label>
+                <input type="text" id="url-input" placeholder="https://example.com">
+            </div>
+            
+            <div class="options-group">
+                <label>Scraping Method:</label>
+                <div class="radio-group">
+                    <input type="radio" id="bs4-method" name="scrape-method" value="bs4" checked>
+                    <label for="bs4-method">BeautifulSoup</label>
+                    
+                    <input type="radio" id="llamaindex-method" name="scrape-method" value="llamaindex">
+                    <label for="llamaindex-method">LlamaIndex</label>
+                </div>
+            </div>
+            
+            <button id="scrape-url-btn" class="primary-btn">Scrape</button>
+        </div>
+        
+        <div class="tab-content" id="topic-tab">
+            <div class="input-group">
+                <label for="topic-input">Topic to Search:</label>
+                <input type="text" id="topic-input" placeholder="Enter a topic...">
+            </div>
+            <button id="search-topic-btn" class="primary-btn">Search & Scrape</button>
+        </div>
+        
+        <div class="processing-options">
+            <label>Processing Type:</label>
+            <div class="radio-group">
+                <input type="radio" id="summarize" name="processing-type" value="summarize" checked>
+                <label for="summarize">Summarize</label>
+                
+                <input type="radio" id="keypoints" name="processing-type" value="keypoints">
+                <label for="keypoints">Extract Key Points</label>
+                
+                <input type="radio" id="sentiment" name="processing-type" value="sentiment">
+                <label for="sentiment">Analyze Sentiment</label>
+            </div>
+        </div>
+        
+        <div class="results-container" id="results-container" style="display: none;">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Processing... This may take a moment</p>
+            </div>
+            
+            <div class="results" id="results">
+                <div class="result-meta">
+                    <h2 id="result-title">Title</h2>
+                    <p id="result-url">URL: <a href="#" target="_blank"></a></p>
+                </div>
+                
+                <div class="result-tabs">
+                    <button class="result-tab-btn active" data-result-tab="processed">Processed Content</button>
+                    <button class="result-tab-btn" data-result-tab="raw">Raw Content</button>
+                </div>
+                
+                <div class="result-tab-content active" id="processed-content">
+                    <pre id="processed-result"></pre>
+                </div>
+                
+                <div class="result-tab-content" id="raw-content">
+                    <pre id="raw-result"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
